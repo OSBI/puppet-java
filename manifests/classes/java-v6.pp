@@ -1,9 +1,13 @@
 class java::v6 {
 
   include java::params
-
+  include apt
   if $operatingsystem =~ /Ubuntu|Debian/ and $java16_vendor == "sun" {
 
+    apt::sources_list { "canonicalpartner":
+      content => "deb http://archive.canonical.com/ubuntu/ natty partner"
+    }
+    
     # Thanks to Java strange licensing
     file {"/var/cache/debconf/sun-java6-bin.preseed":
       ensure  => present,
