@@ -17,7 +17,7 @@ class java::v6 {
     package {"sun-java6-bin":
       ensure       => present,
       responsefile => "/var/cache/debconf/sun-java6-bin.preseed",
-      require      => File["/var/cache/debconf/sun-java6-bin.preseed"],
+      require      => [File["/var/cache/debconf/sun-java6-bin.preseed"], Apt::Sources_list["canonicalpartner"]],
       before       => Package["${java::params::pkgname}"],
     }
   
