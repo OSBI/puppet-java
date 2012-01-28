@@ -6,8 +6,14 @@ class java::v6 {
 ####needs to check for natty etc
     apt::sources_list { "canonicalpartner":
       content => "deb http://archive.canonical.com/ubuntu/ natty partner"
+      notify => Exec["apt-get-update"],
     }
     
+    exec { "apt-get-update":
+    command => "apt-get update",
+    logoutput => true,
+  	}
+  
     # Thanks to Java strange licensing
     file {"/var/cache/debconf/sun-java6-bin.preseed":
       ensure  => present,
