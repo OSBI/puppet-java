@@ -5,7 +5,7 @@ class java::v6 {
   if $operatingsystem =~ /Ubuntu|Debian/ and $java16_vendor == "sun" {
 ####needs to check for natty etc
     apt::sources_list { "canonicalpartner":
-      content => "deb http://archive.canonical.com/ubuntu/ natty partner"
+      content => "deb http://archive.canonical.com/ubuntu/ natty partner",
       notify => Exec["apt-get-update"],
     }
     
