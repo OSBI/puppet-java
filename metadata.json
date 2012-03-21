@@ -1,0 +1,38 @@
+{
+  "name": "Analytical Labs-java",
+  "author": "Tom Barber",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "1.0",
+  "checksums": {
+    "Modulefile": "237d753bade99d40fab576a7fa2cf6c5",
+    "README": "d41d8cd98f00b204e9800998ecf8427e",
+    "manifests/dev.pp": "8b68ecb450bed48250a5bf8434abfc40",
+    "manifests/init.pp": "4e9552be085fb68dfdf5d3b9df5a80b5",
+    "manifests/jai-imageio.pp": "dc833c5ece1c45f1c41842d1443d3b7e",
+    "manifests/jai.pp": "73d102b7822b333f7bfa46bd02a8ca39",
+    "manifests/keystore/import.pp": "f5088624e19a12f6bd3768c579601ffe",
+    "manifests/keystore/import/cert.pp": "a487a9183b318236f3f92115c6c242e6",
+    "manifests/keystore/import/key.pp": "79c8b8f2b0515676cb3ea6c8d865fc91",
+    "manifests/keystore/keypair.pp": "422e772d2a56c8c1506daa5626044878",
+    "manifests/params.pp": "78699158342bb836090ec8984cf22b2f",
+    "manifests/v6.pp": "29a05a00f306fbebce8fecfcf8657e2d",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/java-home.erb": "13338dd381589edaad7c804825250323",
+    "tests/init.pp": "01ed568a64f272ad728054341a562406"
+  },
+  "dependencies": [
+    {
+      "name": "Analytical Labs/archive",
+      "versionRequirement": "\u003d\u003d1.0"
+    },
+    {
+      "name": "Analytical Labs/apt",
+      "versionRequirement": "\u003d\u003d1.0"
+    }
+  ]
+}
